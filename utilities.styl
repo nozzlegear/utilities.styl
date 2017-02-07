@@ -1,0 +1,88 @@
+//Responsive breakers
+smMinWidth = 35.5em;
+mdMinWidth = 48em;
+lgMinWidth = 64em;
+xlMinWidth = 80em;
+
+base(prefix) {
+    .{prefix}text-center {
+        text-align: center;
+    }
+
+    .{prefix}text-right {
+        text-align: right;
+    }
+
+    .{prefix}text-left {
+        text-align: left;
+    }
+
+    .{prefix}center-children {
+        display:flex;
+        justify-content: center;
+    }
+
+    .{prefix}align-children {
+        display:flex;
+        align-items: center;
+    }
+
+    .{prefix}justify-space-between {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .{prefix}hidden {
+        display: none !important;
+    }
+
+    .{prefix}ellipsis {
+        overflow: hidden;
+        word-break: keep-all;
+        text-overflow: ellipsis;
+    }
+
+    .{prefix}float-right {
+        float: right;
+        clear:both;
+    }
+
+    .{prefix}float-left {
+        float: left;
+        clear:both;
+    }
+
+    .{prefix}float-none {
+        float: none;
+    }
+
+    .{prefix}color {
+        color: #526273;
+    }
+
+    img.{prefix}img-responsive {
+        max-width: 100%;
+    }
+
+    .{prefix}cursor, .{prefix}pointer {
+        cursor: pointer;
+    }
+}
+
+base("");
+
+@media screen and (min-width: smMinWidth) {
+    base("sm-");
+}
+
+@media screen and (min-width: mdMinWidth) {
+    base("md-");
+}
+
+@media screen and (min-width: lgMinWidth) {
+    base("lg-");
+}
+
+@media screen and (min-width: xlMinWidth) {
+    base("xl-");
+}
