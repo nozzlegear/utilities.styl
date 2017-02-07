@@ -7,7 +7,7 @@
   "license": "MIT",
   "description": "Common CSS utilities that I use across a multitude of apps.",
   "scripts": {
-    "build": "stylus -u autoprefixer-stylus utilities.styl -o utilities.css",
+    "build": "stylus -u autoprefixer-stylus ./",
     "prepublish": "npm run build"
   },
   "devDependencies": {
