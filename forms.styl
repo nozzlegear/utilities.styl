@@ -35,11 +35,16 @@ button.btn, a.btn {
         color: #fff;
     }
 
+    &.red {
+        background-color: #e31c1c;
+        color: #fff;
+    }
+
     &:hover {
         border-color: rgba(0,0,0,.4);
         text-decoration: none;
 
-        &:not(.purple):not(.blue) {
+        &:not(.purple):not(.blue):not(.red) {
             color: #000;
         }
     }
