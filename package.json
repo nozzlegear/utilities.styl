@@ -6,6 +6,10 @@
   "author": "Joshua Harms <joshua@nozzlegear.com>",
   "license": "MIT",
   "description": "Common CSS utilities that I use across a multitude of apps.",
+  "files": [
+    "*.styl",
+    "*.css"
+  ],
   "scripts": {
     "build": "stylus -u autoprefixer-stylus ./",
     "prepublish": "npm run build"
