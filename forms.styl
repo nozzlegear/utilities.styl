@@ -77,6 +77,13 @@ input, input[type="text"], input[type="email"], input[type="password"], select, 
     height: 3.9rem;
     border-radius: 0;
 
+    &[type="checkbox"], &[type="radio"] {
+        width: auto;
+        height: auto;
+        display: inline;
+        box-shadow: unset;
+    }
+
     &:focus {
         border-color: #66afe9;
         outline: 0;
