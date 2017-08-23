@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "build": "stylus -u autoprefixer-stylus ./",
-    "prepublish": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "autoprefixer-stylus": "^0.13.0",
